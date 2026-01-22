@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+    <addon id="script.iptv.autoconfig" name="IPTV Auto-Config" version="1.0.0" provider-name="Debe2025">
+        <requires>
+            <import addon="xbmc.python" version="3.0.0"/>
+        </requires>
+        <extension point="xbmc.python.script" library="service.py">
+            <provides>executable</provides>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en_GB">Auto-configure IPTV channels based on location</summary>
+            <description lang="en_GB">Automatically detects your location and downloads free IPTV channels for your country. Includes EPG guide data and configures PVR IPTV Simple Client addon.</description>
+            <platform>all</platform>
+            <license>MIT</license>
+            <forum></forum>
+            <website></website>
+            <source></source>
+            <news>
+v1.0.0 (2026-01-16)
+- Initial release
+- Auto-detect location by IP
+- Download country-specific channels
+- Merge multiple playlists
+- Remove duplicates
+- Download EPG guide
+- Auto-configure PVR IPTV Simple
+            </news>
+            <assets>
+                <icon>icon.png</icon>
+                <fanart>fanart.jpg</fanart>
+            </assets>
+        </extension>
+    </addon>
+    
+    <addon id="repository.iptv.autoconfig" name="IPTV Auto-Config Repository" version="1.0.0" provider-name="YourName">
+        <extension point="xbmc.addon.repository" name="IPTV Auto-Config Repository">
+            <dir>
+                <info compressed="false">https://raw.githubusercontent.com/Debe2025/myIPTV/main/addons.xml</info>
+                <checksum>https://raw.githubusercontent.com/Debe2025/myIPTV/main/addons.xml.md5</checksum>
+                <datadir zip="true">https://raw.githubusercontent.com/Debe2025/myIPTV/main/</datadir>
+            </dir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>IPTV Auto-Config Repository</summary>
+            <description>Install this repository to get automatic IPTV channel setup based on your location. Includes auto-updates.</description>
+            <disclaimer>Free IPTV channels from public sources. Channel availability varies by location.</disclaimer>
+            <platform>all</platform>
+            <assets>
+                <icon>icon.png</icon>
+                <fanart>fanart.jpg</fanart>
+            </assets>
+        </extension>
+    </addon>
+</addons>
